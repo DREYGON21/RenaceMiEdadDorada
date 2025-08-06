@@ -62,7 +62,7 @@ const AboutSection = () => {
         <div className="mt-20 text-center">
           <div className="inline-flex items-center space-x-4 bg-emerald-50 rounded-full px-8 py-4">
             <div className="w-12 h-12 bg-emerald-600 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-xl">💚</span>
+              <Heart className="text-white" size={24} />
             </div>
             <div className="text-emerald-800">
               <p className="font-semibold text-lg">Fundado con amor por:</p>
