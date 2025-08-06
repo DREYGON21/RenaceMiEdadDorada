@@ -1,5 +1,5 @@
 import React from 'react';
-import { History, Target, Eye } from 'lucide-react';
+import { History, Target, Eye, Heart } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { aboutInfo } from '../mock';
 
