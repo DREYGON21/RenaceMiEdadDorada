@@ -29,7 +29,7 @@ export const errorHandler = (
   }
 
   // Handle duplicate key errors
-  if (error.name === 'MongoServerError' && 'code' in error && error.code === 11000) {
+  if (error.name === 'MongoServerError' && 'code' in error && (error as any).code === 11000) {
     statusCode = 400;
     message = 'Duplicate entry';
   }
