@@ -85,14 +85,14 @@ const ContactMessageSchema = new Schema<IContactMessage>(
     toJSON: {
       transform: (doc, ret) => {
         ret._id = ret.id;
-        delete ret.__v;
+        delete (ret as any).__v;
         return ret;
       },
     },
     toObject: {
       transform: (doc, ret) => {
         ret._id = ret.id;
-        delete ret.__v;
+        delete (ret as any).__v;
         return ret;
       },
     },
