@@ -143,7 +143,7 @@ router.post('/', validateActivity, asyncHandler(async (req: express.Request, res
 router.put('/:id', 
   param('id').isString().withMessage('Activity ID must be a string'),
   validateActivityUpdate, 
-  asyncHandler(async (req: express.Request, res: express.Response<ApiResponse>): Promise<void> => {
+  asyncHandler(async (req: express.Request, res: express.Response<ApiResponse>) => {
     if (handleValidationErrors(req, res)) return;
 
     try {
