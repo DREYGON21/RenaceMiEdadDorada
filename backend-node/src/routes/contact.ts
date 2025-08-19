@@ -1,7 +1,7 @@
 import express from 'express';
 import { body, query, param, validationResult } from 'express-validator';
 import { ContactMessage, IContactMessageCreate, IContactMessageUpdate } from '../models/ContactMessage';
-import { ApiResponse, MessageStatus } from '../types/api';
+import { ApiResponse, PaginatedResponse, MessageStatus } from '../types/api';
 import { asyncHandler } from '../middleware/errorHandler';
 
 const router = express.Router();
