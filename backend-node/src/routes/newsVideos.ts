@@ -56,7 +56,7 @@ const validateNewsVideoUpdate = [
 ];
 
 // Helper function to handle validation errors
-const handleValidationErrors = (req: express.Request, res: express.Response<ApiResponse>) => {
+const handleValidationErrors = (req: express.Request, res: express.Response<ApiResponse>): boolean => {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
     res.status(400).json({
