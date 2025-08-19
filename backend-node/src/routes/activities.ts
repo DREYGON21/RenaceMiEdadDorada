@@ -184,7 +184,7 @@ router.put('/:id',
 // DELETE /api/activities/:id - Soft delete activity
 router.delete('/:id',
   param('id').isString().withMessage('Activity ID must be a string'),
-  asyncHandler(async (req: express.Request, res: express.Response<ApiResponse>) => {
+  asyncHandler(async (req: express.Request, res: express.Response<ApiResponse>): Promise<void> => {
     if (handleValidationErrors(req, res)) return;
 
     try {
