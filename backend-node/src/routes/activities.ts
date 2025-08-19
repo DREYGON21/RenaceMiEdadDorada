@@ -100,7 +100,7 @@ router.get('/', asyncHandler(async (req: express.Request, res: express.Response<
 }));
 
 // POST /api/activities - Create new activity
-router.post('/', validateActivity, asyncHandler(async (req: express.Request, res: express.Response<ApiResponse>) => {
+router.post('/', validateActivity, asyncHandler(async (req: express.Request, res: express.Response<ApiResponse>): Promise<void> => {
   if (handleValidationErrors(req, res)) return;
 
   try {
