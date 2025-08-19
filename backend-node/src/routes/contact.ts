@@ -78,7 +78,7 @@ router.post('/', validateContactMessage, asyncHandler(async (req: express.Reques
 }));
 
 // GET /api/contact-messages - Get contact messages (admin endpoint)
-router.get('/messages', asyncHandler(async (req: express.Request, res: express.Response<ApiResponse>) => {
+router.get('/messages', asyncHandler(async (req: express.Request, res: express.Response<PaginatedResponse>) => {
   try {
     const page = parseInt(req.query.page as string) || 1;
     const limit = parseInt(req.query.limit as string) || 20;
