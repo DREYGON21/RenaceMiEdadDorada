@@ -98,19 +98,19 @@ export const newsVideos = [
     id: 1,
     title: "Actividades de la semana pasada",
     videoId: "dQw4w9WgXcQ",
-    thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg"
+    thumbnail: "https://www.youtube.com/watch?v=kPy4keby7NE"
   },
   {
     id: 2,
     title: "Taller de manualidades",
     videoId: "dQw4w9WgXcQ",
-    thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg"
+    thumbnail: "https://www.youtube.com/watch?v=NiGxEkuPX_8"
   },
   {
     id: 3,
     title: "Celebración comunitaria",
     videoId: "dQw4w9WgXcQ",
-    thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg"
+    thumbnail: "https://www.youtube.com/watch?v=o1Tib3ndUmU"
   }
 ];
 
